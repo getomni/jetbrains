@@ -4,36 +4,20 @@
   "author": "Mayconsgs",
   "editorScheme": "/Omni.xml",
   "colors": {
-    "COLOR0": "#201B2D",
-    "COLOR1": "#FF79C6",
-    "COLOR3": "#e7de79",
-    "COLOR2": "#67e480",
-    "COLOR4": "#78D1E1",
-    "COLOR5": "#988bc7",
-    "COLOR6": "#A1EFE4",
-    "COLOR7": "#E1E1E6",
-    "COLOR8": "#626483",
-    "COLOR9": "#ed4556",
-    "COLOR11": "#e7de79",
-    "COLOR10": "#00F769",
-    "COLOR12": "#78D1E1",
-    "COLOR13": "#988bc7",
-    "COLOR14": "#A4FFFF",
-    "COLOR15": "#F7F7FB",
+
     "BG": "#191622",
     "FG": "#E1E1E6",
     "SELECTION": "#41414D",
-    "COMMENT": "#5A4B81",
+    "COMMENT": "#483C67",
     "CYAN": "#78D1E1",
-    "GREEN": "#67e480",
+    "GREEN": "#67E480",
     "ORANGE": "#E89E64",
     "PINK": "#FF79C6",
-    "PURPLE": "#988bc7",
+    "PURPLE": "#988BC7",
     "RED": "#E96379",
-    "YELLOW": "#e7de79",
+    "YELLOW": "#E7DE79",
+
     "WHITE": "#E1E1E6",
-    "TEMP_QUOTES": "#e7de79",
-    "TEMP_PROPERTY_QUOTES": "#7159C1",
     "LineHighlight": "#44475A75",
     "NonText": "#FFFFFF1A",
     "TAB_DROP_BG": "#44475A70",
@@ -120,12 +104,12 @@
       "shortcutForeground": "PURPLE"
     },
     "FileColor": {
-      "Yellow": "#45410C",
-      "Green": "#0D4A19",
-      "Blue": "#11464F",
-      "Violet": "#463875",
-      "Orange": "#66350F",
-      "Rose": "#811225"
+      "Yellow": "#E7DE7910",
+      "Green": "#67E48010",
+      "Blue": "#78D1E110",
+      "Violet": "#988BC710",
+      "Orange": "#E89E6410",
+      "Rose": "#E9637910"
     },
     "Link": {
       "activeForeground": "PINK",
@@ -183,14 +167,6 @@
     "DragAndDrop": {
       "areaBorderColor": "SELECTION"
     },
-    "ScrollBar": {
-      "Mac": {
-        "hoverThumbColor": "COMMENT",
-        "Transparent": {
-          "hoverThumbColor": "COMMENT"
-        }
-      }
-    },
     "ToolWindow": {
       "Button": {
         "hoverBackground": "BGLighter",
@@ -206,16 +182,15 @@
       "warningBorderColor": "ORANGE"
     },
     "VersionControl": {
-
       "FileHistory": {
         "Commit": {
           "selectedBranchBackground": "SELECTION"
         }
       },
       "GitLog": {
-        "headIconColor": "YELLOW",
+        "headIconColor": "PURPLE",
         "localBranchIconColor": "GREEN",
-        "remoteBranchIconColor": "COMMENT",
+        "remoteBranchIconColor": "RED",
         "tagIconColor": "PINK",
         "otherIconColor": "CYAN"
       },
@@ -232,23 +207,25 @@
   },
   "icons": {
     "ColorPalette": {
-      "Actions.Grey": "#a0a0a0",
+      "Actions.Grey": "#a0a0a0D0",
       "Actions.Red": "#E96379",
       "Actions.Yellow": "#e7de79",
       "Actions.Green": "#67e480",
       "Actions.Blue": "#78D1E1",
-      "Actions.GreyInline.Dark": "#808080FF",
-      "Objects.Grey": "#a0a0a0FF",
-      "Objects.RedStatus": "#ed4556FF",
-      "Objects.Red": "#ed4556FF",
-      "Objects.Pink": "#FF79C6FF",
-      "Objects.Yellow": "#e7de79ff",
-      "Objects.Green": "#00F769FF",
-      "Objects.Blue": "#78D1E1FF",
-      "Objects.Purple": "#988bc7FF",
-      "Objects.BlackText": "#201B2DFF",
-      "Objects.YellowDark": "#e7de79ff",
-      "Objects.GreenAndroid": "#3DDC84FF",
+      "Actions.GreyInline.Dark": "#808080D0",
+
+      "Objects.Grey": "#a0a0a0D0",
+      "Objects.RedStatus": "#ed4556D0",
+      "Objects.Red": "#ed4556D0",
+      "Objects.Pink": "#FF79C6D0",
+      "Objects.Yellow": "#e7de79D0",
+      "Objects.Green": "#00F769D0",
+      "Objects.Blue": "#78D1E1D0",
+      "Objects.Purple": "#988bc7D0",
+      "Objects.BlackText": "#201B2DD0",
+      "Objects.YellowDark": "#e7de79D0",
+      "Objects.GreenAndroid": "#00F769D0",
+
       "Checkbox.Background.Default.Dark": "#252131",
       "Checkbox.Border.Default.Dark": "#988bc7",
       "Checkbox.Foreground.Selected.Dark": "#988bc7",
