@@ -1,15 +1,13 @@
 <idea-plugin>
     <id>com.github.mayconsgs.jetbrains</id>
-    <name>jetbrains</name>
-    <vendor>mayconsgs</vendor>
-
-    <!-- Product and plugin compatibility requirements -->
-    <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <name>Omni Theme</name>
+    <vendor>Maycon Santos</vendor>
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="com.github.mayconsgs.jetbrains.services.MyApplicationService"/>
         <projectService serviceImplementation="com.github.mayconsgs.jetbrains.services.MyProjectService"/>
+        <themeProvider id="4cdf8912-6063-4823-b4aa-54024f8c94a4" path="/Omni.theme.json"/>
     </extensions>
 
     <applicationListeners>
