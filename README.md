@@ -16,6 +16,7 @@
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%235FCC6F">
 </p>
+<!-- Plugin description end -->
 
 <p align="center">
   <a href="#install">Install</a> •
@@ -42,4 +43,3 @@ This theme is maintained by the following person(s) and a bunch of [awesome cont
 ## License
 
 [MIT License](./LICENSE.md)
-<!-- Plugin description end -->
