@@ -4,7 +4,6 @@
   "author": "Mayconsgs",
   "editorScheme": "/Omni.xml",
   "colors": {
-
     "BG": "#191622",
     "FG": "#E1E1E6",
     "SELECTION": "#41414D",
@@ -16,7 +15,6 @@
     "PURPLE": "#988BC7",
     "RED": "#E96379",
     "YELLOW": "#E7DE79",
-
     "WHITE": "#E1E1E6",
     "LineHighlight": "#44475A75",
     "NonText": "#FFFFFF1A",
@@ -28,13 +26,13 @@
   },
   "ui": {
     "*": {
-      "background": "BG",
+      "background": "BGDarker",
       "foreground": "FG",
       "infoForeground": "#9280C4",
-      "selectionBackground": "COMMENT",
+      "selectionBackground": "#41414D60",
       "selectionForeground": "FG",
-      "selectionInactiveBackground": "SELECTION",
-      "selectionBackgroundInactive": "SELECTION",
+      "selectionInactiveBackground": "LineHighlight",
+      "selectionBackgroundInactive": "LineHighlight",
       "disabledBackground": "BGDarker",
       "inactiveBackground": "BGDarker",
       "disabledForeground": "COMMENT",
@@ -44,17 +42,21 @@
       "borderColor": "BGDarker",
       "disabledBorderColor": "BGLighter",
       "focusColor": "PURPLE",
-      "focusedBorderColor": "PURPLE",
+      "focusedBorderColor": "COMMENT",
       "hoverBorderColor": "PURPLE",
       "pressedBorderColor": "PURPLE",
       "separatorColor": "BGDarker",
       "lineSeparatorColor": "BGDarker"
+    },
+    "ToolBar": {
+      "background": "BG"
     },
     "ActionButton": {
       "hoverBackground": "SELECTION",
       "pressedBackground": "SELECTION"
     },
     "Button": {
+      "background": "#00000000",
       "startBackground": "BGLighter",
       "endBackground": "BGLighter",
       "startBorderColor": "PURPLE",
@@ -69,8 +71,8 @@
       }
     },
     "Borders": {
-      "color": "BGDarker",
-      "ContrastBorderColor": "BGLighter"
+      "color": "COMMENT",
+      "ContrastBorderColor": "BGLight"
     },
     "ComboBox": {
       "nonEditableBackground": "BGLight",
@@ -86,6 +88,18 @@
       "selectionInactiveBackground": "SELECTION",
       "selectionBackground": "SELECTION"
     },
+
+    "TextField": {
+      "background": "BG",
+      "selectionBackground": "BG"
+    },
+
+    "TextArea": {
+      "background": "BG",
+      "selectionBackground": "BG",
+      "inactiveBackground": "BG"
+    },
+
     "Component": {
       "errorFocusColor": "RED",
       "inactiveErrorFocusColor": "RED",
@@ -94,11 +108,39 @@
       "iconColor": "WHITE",
       "hoverIconColor": "WHITE"
     },
+    "EditorPane": {
+      "background": "BG",
+      "inactiveBackground": "BG"
+    },
     "DefaultTabs": {
+      "background": "BG",
       "underlineColor": "PINK",
       "inactiveUnderlineColor": "PINK",
       "underlineHeight": 1,
-      "hoverBackground": "BG"
+      "hoverBackground": "BGLight"
+    },
+    "FormattedTextField": {
+      "background": "BG",
+      "inactiveBackground": "BG",
+      "selectionBackground": "BG"
+    },
+    "Menu": {
+      "background": "BG"
+    },
+    "MenuItem": {
+      "background": "BG"
+    },
+    "Panel": {
+      "background": "BG"
+    },
+    "OptionPane": {
+      "background": "BG"
+    },
+    "CheckBox.background": "BG",
+    "Group.separatorColor": "COMMENT",
+    "EditorTabs": {
+      "background": "BGDarker",
+      "borderColor": "BG"
     },
     "Editor": {
       "shortcutForeground": "PURPLE"
@@ -119,7 +161,7 @@
       "secondaryForeground": "PURPLE"
     },
     "Notification": {
-      "errorForeground": "FG",
+      "errorForeground": "RED",
       "errorBackground": "BG",
       "errorBorderColor": "RED",
       "MoreButton.innerBorderColor": "COMMENT",
@@ -130,7 +172,7 @@
         "warningForeground": "FG",
         "warningBackground": "BG",
         "warningBorderColor": "ORANGE",
-        "errorForeground": "FG",
+        "errorForeground": "RED",
         "errorBackground": "BG",
         "errorBorderColor": "RED"
       }
@@ -152,7 +194,13 @@
     },
     "Popup": {
       "Header.activeBackground": "BGLight",
-      "Header.inactiveBackground": "BGLight"
+      "Header.inactiveBackground": "BGLight",
+      "Toolbar": {
+        "background": "BG"
+      },
+      "Advertiser": {
+        "background": "BG"
+      }
     },
     "ProgressBar": {
       "trackColor": "SELECTION",
@@ -168,6 +216,10 @@
       "areaBorderColor": "SELECTION"
     },
     "ToolWindow": {
+      "Header": {
+        "background": "BGLight",
+        "inactiveBackground": "BG"
+      },
       "Button": {
         "hoverBackground": "BGLighter",
         "selectedBackground": "BGLighter",
@@ -213,7 +265,6 @@
       "Actions.Green": "#67e480",
       "Actions.Blue": "#78D1E1",
       "Actions.GreyInline.Dark": "#808080D0",
-
       "Objects.Grey": "#a0a0a0D0",
       "Objects.RedStatus": "#ed4556D0",
       "Objects.Red": "#ed4556D0",
@@ -225,7 +276,6 @@
       "Objects.BlackText": "#201B2DD0",
       "Objects.YellowDark": "#e7de79D0",
       "Objects.GreenAndroid": "#00F769D0",
-
       "Checkbox.Background.Default.Dark": "#252131",
       "Checkbox.Border.Default.Dark": "#988bc7",
       "Checkbox.Foreground.Selected.Dark": "#988bc7",
