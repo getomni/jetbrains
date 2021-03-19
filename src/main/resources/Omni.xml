@@ -32,6 +32,8 @@
     <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="e1e1e6" />
     <option name="MODIFIED_LINES_COLOR" value="988bc7" />
     <option name="MODIFIED_TAB_ICON" value="988bc7" />
+    <option name="NOTIFICATION_BACKGROUND" value="191622" />
+    <option name="PROMOTION_PANE" value="e9bfa" />
     <option name="RIGHT_MARGIN_COLOR" value="252131" />
     <option name="SELECTED_INDENT_GUIDE" value="5a4b81" />
     <option name="SELECTION_BACKGROUND" value="41414d" />
@@ -342,7 +344,7 @@
     </option>
     <option name="DEFAULT_STATIC_FIELD">
       <value>
-        <option name="FOREGROUND" value="988bc7" />
+        <option name="FOREGROUND" value="e1e1e6" />
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
@@ -467,8 +469,9 @@
     <option name="List/map to object conversion" baseAttributes="JAVA_NUMBER" />
     <option name="MATCHED_BRACE_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="78d1e1" />
+        <option name="FOREGROUND" value="e1e1e6" />
         <option name="FONT_TYPE" value="1" />
+        <option name="EFFECT_COLOR" value="41414d" />
       </value>
     </option>
     <option name="MATCHED_TAG_NAME">
