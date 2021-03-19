@@ -2,15 +2,12 @@
   <id>com.github.mayconsgs.jetbrains</id>
   <name>Omni Theme</name>
   <vendor url="https://github.com/Mayconsgs" email="maycon.s.santos44@gmail.com">Maycon Santos</vendor>
-
   <depends>com.intellij.modules.platform</depends>
-
   <extensions defaultExtensionNs="com.intellij">
     <applicationService serviceImplementation="com.github.mayconsgs.jetbrains.services.MyApplicationService"/>
     <projectService serviceImplementation="com.github.mayconsgs.jetbrains.services.MyProjectService"/>
     <themeProvider id="4cdf8912-6063-4823-b4aa-54024f8c94a4" path="/Omni.theme.json"/>
   </extensions>
-
   <applicationListeners>
     <listener class="com.github.mayconsgs.jetbrains.listeners.MyProjectManagerListener"
               topic="com.intellij.openapi.project.ProjectManagerListener"/>

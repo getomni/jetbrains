@@ -89,8 +89,6 @@ tasks {
     version(properties("pluginVersion"))
     sinceBuild(properties("pluginSinceBuild"))
     untilBuild(properties("pluginUntilBuild"))
-
-
     pluginDescription(
       closure {
         File("./README.md").readText().lines().run {
