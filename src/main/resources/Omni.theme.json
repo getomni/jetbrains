@@ -26,7 +26,7 @@
   },
   "ui": {
     "*": {
-      "background": "BGDarker",
+      "background": "BG",
       "foreground": "FG",
       "infoForeground": "#9280C4",
       "selectionBackground": "#41414D60",
@@ -88,18 +88,15 @@
       "selectionInactiveBackground": "SELECTION",
       "selectionBackground": "SELECTION"
     },
-
     "TextField": {
       "background": "BG",
       "selectionBackground": "BG"
     },
-
     "TextArea": {
       "background": "BG",
       "selectionBackground": "BG",
       "inactiveBackground": "BG"
     },
-
     "Component": {
       "errorFocusColor": "RED",
       "inactiveErrorFocusColor": "RED",
@@ -136,10 +133,11 @@
     "OptionPane": {
       "background": "BG"
     },
-    "CheckBox.background": "BG",
-    "Group.separatorColor": "COMMENT",
+    "Group": {
+      "separatorColor": "COMMENT"
+    },
     "EditorTabs": {
-      "background": "BGDarker",
+      "background": "BGDark",
       "borderColor": "BG"
     },
     "Editor": {
@@ -226,7 +224,10 @@
         "selectedForeground": "FG"
       }
     },
-    "Tree.modifiedItemForeground": "PURPLE",
+    "Tree": {
+      "background": "BGDark",
+      "modifiedItemForeground": "PURPLE"
+    },
     "ValidationTooltip": {
       "errorBackground": "BG",
       "errorBorderColor": "RED",

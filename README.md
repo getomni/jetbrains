@@ -1,3 +1,4 @@
+<!-- Plugin description -->
 <h1 align="center">
   <br>
   <img src="https://storage.googleapis.com/golden-wind/github/omni/omni.png" alt="Omni Logo" width="100">
@@ -15,6 +16,7 @@
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%235FCC6F">
 </p>
+<!-- Plugin description end -->
 
 <p align="center">
   <a href="#install">Install</a> •
