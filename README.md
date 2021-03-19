@@ -1,3 +1,4 @@
+<!-- Plugin description -->
 <h1 align="center">
   <br>
   <img src="https://storage.googleapis.com/golden-wind/github/omni/omni.png" alt="Omni Logo" width="100">
@@ -41,3 +42,4 @@ This theme is maintained by the following person(s) and a bunch of [awesome cont
 ## License
 
 [MIT License](./LICENSE.md)
+<!-- Plugin description end -->

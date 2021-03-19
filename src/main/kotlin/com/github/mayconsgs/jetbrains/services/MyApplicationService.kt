@@ -4,7 +4,7 @@ import com.github.mayconsgs.jetbrains.MyBundle
 
 class MyApplicationService {
 
-    init {
-        println(MyBundle.message("applicationService"))
-    }
+  init {
+    println(MyBundle.message("applicationService"))
+  }
 }

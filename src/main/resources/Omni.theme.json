@@ -88,18 +88,15 @@
       "selectionInactiveBackground": "SELECTION",
       "selectionBackground": "SELECTION"
     },
-
     "TextField": {
       "background": "BG",
       "selectionBackground": "BG"
     },
-
     "TextArea": {
       "background": "BG",
       "selectionBackground": "BG",
       "inactiveBackground": "BG"
     },
-
     "Component": {
       "errorFocusColor": "RED",
       "inactiveErrorFocusColor": "RED",
