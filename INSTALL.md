@@ -2,7 +2,7 @@
 
 #### Install manually
 
-Download [Omni.Theme-0.1.0.zip](https://github.com/Mayconsgs/jetbrains/releases/download/v0.1.0-beta/Omni.Theme-0.1.0.zip)
+Download [Omni.Theme-0.1.1.zip](https://github.com/Mayconsgs/jetbrains/releases/download/v0.1.1-beta/Omni.Theme-0.1.1.zip)
 .
 
 #### Activating theme
