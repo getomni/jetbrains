@@ -1,4 +1,4 @@
-package com.github.mayconsgs.jetbrains
+package com.github.getomni.jetbrains
 
 import com.intellij.AbstractBundle
 import org.jetbrains.annotations.NonNls

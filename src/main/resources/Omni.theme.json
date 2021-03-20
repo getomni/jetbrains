@@ -49,7 +49,7 @@
       "lineSeparatorColor": "BGDarker"
     },
     "ToolBar": {
-      "background": "BG"
+      "background": "BGLighter"
     },
     "ActionButton": {
       "hoverBackground": "SELECTION",
@@ -88,15 +88,6 @@
       "selectionInactiveBackground": "SELECTION",
       "selectionBackground": "SELECTION"
     },
-    "TextField": {
-      "background": "BG",
-      "selectionBackground": "BG"
-    },
-    "TextArea": {
-      "background": "BG",
-      "selectionBackground": "BG",
-      "inactiveBackground": "BG"
-    },
     "Component": {
       "errorFocusColor": "RED",
       "inactiveErrorFocusColor": "RED",
@@ -106,39 +97,20 @@
       "hoverIconColor": "WHITE"
     },
     "EditorPane": {
-      "background": "BG",
-      "inactiveBackground": "BG"
+      "background": "BGLighter",
+      "inactiveBackground": "BGLighter"
     },
     "DefaultTabs": {
-      "background": "BG",
       "underlineColor": "PINK",
       "inactiveUnderlineColor": "PINK",
       "underlineHeight": 1,
       "hoverBackground": "BGLight"
     },
-    "FormattedTextField": {
-      "background": "BG",
-      "inactiveBackground": "BG",
-      "selectionBackground": "BG"
+    "EditorTabs": {
+      "background": "BGDark"
     },
     "Menu": {
-      "background": "BG"
-    },
-    "MenuItem": {
-      "background": "BG"
-    },
-    "Panel": {
-      "background": "BG"
-    },
-    "OptionPane": {
-      "background": "BG"
-    },
-    "Group": {
-      "separatorColor": "COMMENT"
-    },
-    "EditorTabs": {
-      "background": "BGDark",
-      "borderColor": "BG"
+      "background": "BGLighter"
     },
     "Editor": {
       "shortcutForeground": "PURPLE"
@@ -152,11 +124,11 @@
       "Rose": "#E9637910"
     },
     "Link": {
-      "activeForeground": "PINK",
-      "hoverForeground": "PINK",
+      "activeForeground": "PURPLE",
+      "hoverForeground": "PURPLE",
       "pressedForeground": "PURPLE",
-      "visitedForeground": "PURPLE",
-      "secondaryForeground": "PURPLE"
+      "visitedForeground": "COMMENT",
+      "secondaryForeground": "PINK"
     },
     "Notification": {
       "errorForeground": "RED",
@@ -170,16 +142,20 @@
         "warningForeground": "FG",
         "warningBackground": "BG",
         "warningBorderColor": "ORANGE",
-        "errorForeground": "RED",
+        "errorForeground": "FG",
         "errorBackground": "BG",
         "errorBorderColor": "RED"
       }
     },
     "Plugins": {
-      "SearchField.background": "BGLighter",
-      "SectionHeader.background": "BGLight",
+      "SearchField.background": "BGDark",
+      "hoverBackground": "BGLight",
       "tagBackground": "PINK",
       "tagForeground": "BG",
+      "lightSelectionBackground": "BGLight",
+      "SectionHeader": {
+        "background": "BGLighter"
+      },
       "Button": {
         "installForeground": "GREEN",
         "installBorderColor": "GREEN",
@@ -187,42 +163,26 @@
         "installFillBackground": "GREEN",
         "updateForeground": "PURPLE",
         "updateBackground": "PURPLE"
-      },
-      "lightSelectionBackground": "SELECTION"
+      }
     },
     "Popup": {
-      "Header.activeBackground": "BGLight",
-      "Header.inactiveBackground": "BGLight",
-      "Toolbar": {
-        "background": "BG"
-      },
-      "Advertiser": {
-        "background": "BG"
+      "Header": {
+        "activeBackground": "BGLight",
+        "inactiveBackground": "BGLight"
       }
     },
     "ProgressBar": {
-      "trackColor": "SELECTION",
-      "progressColor": "COMMENT",
+      "trackColor": "BGLighter",
+      "progressColor": "PINK",
       "indeterminateStartColor": "PURPLE",
-      "indeterminateEndColor": "COMMENT",
+      "indeterminateEndColor": "PURPLE",
       "failedColor": "RED",
-      "failedEndColor": "PINK",
+      "failedEndColor": "RED",
       "passedColor": "GREEN",
       "passedEndColor": "GREEN"
     },
     "DragAndDrop": {
       "areaBorderColor": "SELECTION"
-    },
-    "ToolWindow": {
-      "Header": {
-        "background": "BGLight",
-        "inactiveBackground": "BG"
-      },
-      "Button": {
-        "hoverBackground": "BGLighter",
-        "selectedBackground": "BGLighter",
-        "selectedForeground": "FG"
-      }
     },
     "Tree": {
       "background": "BGDark",
@@ -235,6 +195,10 @@
       "warningBorderColor": "ORANGE"
     },
     "VersionControl": {
+      "HgLog": {
+      },
+      "RefLabel": {
+      },
       "FileHistory": {
         "Commit": {
           "selectedBranchBackground": "SELECTION"
@@ -244,17 +208,14 @@
         "headIconColor": "PURPLE",
         "localBranchIconColor": "GREEN",
         "remoteBranchIconColor": "RED",
-        "tagIconColor": "PINK",
-        "otherIconColor": "CYAN"
+        "tagIconColor": "CYAN",
+        "otherIconColor": "PINK"
       },
       "Log": {
         "Commit": {
           "hoveredBackground": "SELECTION",
           "currentBranchBackground": "BGLight"
         }
-      },
-      "RefLabel": {
-        "foreground": "FG"
       }
     }
   },
