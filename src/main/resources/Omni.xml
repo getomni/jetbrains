@@ -193,8 +193,8 @@
     </option>
     <option name="CTRL_CLICKABLE">
       <value>
-        <option name="FOREGROUND" value="ff79c6" />
-        <option name="EFFECT_COLOR" value="ff79c6" />
+        <option name="FOREGROUND" value="988bc7" />
+        <option name="EFFECT_COLOR" value="988bc7" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -396,8 +396,8 @@
     </option>
     <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="ff79c6" />
-        <option name="EFFECT_COLOR" value="ff79c6" />
+        <option name="FOREGROUND" value="988bc7" />
+        <option name="EFFECT_COLOR" value="988bc7" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -420,8 +420,8 @@
     <option name="HTML_TAG_NAME" baseAttributes="DEFAULT_KEYWORD" />
     <option name="HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="ff79c6" />
-        <option name="EFFECT_COLOR" value="ff79c6" />
+        <option name="FOREGROUND" value="988bc7" />
+        <option name="EFFECT_COLOR" value="988bc7" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -435,7 +435,7 @@
     <option name="IMPLICIT_ANONYMOUS_CLASS_PARAMETER_ATTRIBUTES" baseAttributes="CLASS_NAME_ATTRIBUTES" />
     <option name="INACTIVE_HYPERLINK_ATTRIBUTES">
       <value>
-        <option name="EFFECT_COLOR" value="e1e1e6" />
+        <option name="EFFECT_COLOR" value="483c67" />
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
@@ -512,6 +512,102 @@
       </value>
     </option>
     <option name="List/map to object conversion" baseAttributes="JAVA_NUMBER" />
+    <option name="MARKDOWN_BOLD">
+      <value>
+        <option name="FOREGROUND" value="e89e64" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="MARKDOWN_BOLD_MARKER">
+      <value>
+        <option name="FOREGROUND" value="e89e64" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="MARKDOWN_CODE_FENCE">
+      <value>
+        <option name="FOREGROUND" value="67e480" />
+      </value>
+    </option>
+    <option name="MARKDOWN_CODE_SPAN">
+      <value>
+        <option name="FOREGROUND" value="67e480" />
+      </value>
+    </option>
+    <option name="MARKDOWN_HEADER_LEVEL_1">
+      <value>
+        <option name="FOREGROUND" value="78d1e1" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="MARKDOWN_HEADER_LEVEL_2">
+      <value>
+        <option name="FOREGROUND" value="78d1e1" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="MARKDOWN_HEADER_LEVEL_3">
+      <value>
+        <option name="FOREGROUND" value="78d1e1" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="MARKDOWN_HEADER_LEVEL_4">
+      <value>
+        <option name="FOREGROUND" value="78d1e1" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="MARKDOWN_HEADER_LEVEL_5">
+      <value>
+        <option name="FOREGROUND" value="78d1e1" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="MARKDOWN_HEADER_LEVEL_6">
+      <value>
+        <option name="FOREGROUND" value="78d1e1" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="MARKDOWN_IMAGE">
+      <value />
+    </option>
+    <option name="MARKDOWN_INLINE_HTML">
+      <value>
+        <option name="FOREGROUND" value="ff79c6" />
+        <option name="BACKGROUND" value="191622" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="MARKDOWN_ITALIC">
+      <value>
+        <option name="FOREGROUND" value="e7de79" />
+      </value>
+    </option>
+    <option name="MARKDOWN_ITALIC_MARKER">
+      <value>
+        <option name="FOREGROUND" value="e7de79" />
+      </value>
+    </option>
+    <option name="MARKDOWN_LINK_DESTINATION">
+      <value>
+        <option name="FOREGROUND" value="988bc7" />
+        <option name="FONT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="MARKDOWN_LINK_LABEL">
+      <value>
+        <option name="FOREGROUND" value="78d1e1" />
+      </value>
+    </option>
+    <option name="MARKDOWN_LINK_TEXT">
+      <value>
+        <option name="FOREGROUND" value="ff79c6" />
+        <option name="EFFECT_COLOR" value="ff79c6" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
     <option name="MARKED_FOR_REMOVAL_ATTRIBUTES">
       <value>
         <option name="EFFECT_COLOR" value="e96379" />

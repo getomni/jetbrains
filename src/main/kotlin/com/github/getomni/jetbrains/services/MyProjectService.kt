@@ -1,6 +1,6 @@
-package com.github.mayconsgs.jetbrains.services
+package com.github.getomni.jetbrains.services
 
-import com.github.mayconsgs.jetbrains.MyBundle
+import com.github.getomni.jetbrains.MyBundle
 import com.intellij.openapi.project.Project
 
 class MyProjectService(project: Project) {
