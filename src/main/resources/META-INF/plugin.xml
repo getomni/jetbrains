@@ -2,6 +2,7 @@
   <id>com.github.getomni.jetbrains</id>
   <name>Omni Theme</name>
   <vendor url="https://github.com/getomni" email="maycon.s.santos44@gmail.com">Omni Theme</vendor>
+
   <depends>com.intellij.modules.platform</depends>
 
   <extensions defaultExtensionNs="com.intellij">

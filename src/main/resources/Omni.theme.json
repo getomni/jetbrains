@@ -3,6 +3,7 @@
   "dark": true,
   "author": "Mayconsgs",
   "editorScheme": "/Omni.xml",
+
   "colors": {
     "BG": "#191622",
     "FG": "#E1E1E6",
@@ -24,6 +25,7 @@
     "BGDark": "#13111B",
     "BGDarker": "#15121E"
   },
+
   "ui": {
     "*": {
       "background": "BG",
@@ -48,19 +50,23 @@
       "separatorColor": "BGDarker",
       "lineSeparatorColor": "BGDarker"
     },
+
     "ToolBar": {
       "background": "BGLighter"
     },
+
     "ActionButton": {
       "hoverBackground": "SELECTION",
       "pressedBackground": "SELECTION"
     },
+
     "Button": {
       "background": "#00000000",
       "startBackground": "BGLighter",
       "endBackground": "BGLighter",
       "startBorderColor": "PURPLE",
       "endBorderColor": "PURPLE",
+
       "default": {
         "foreground": "FG",
         "startBackground": "PURPLE",
@@ -70,24 +76,29 @@
         "focusedBorderColor": "COMMENT"
       }
     },
+
     "Borders": {
       "color": "COMMENT",
       "ContrastBorderColor": "BGLight"
     },
+
     "ComboBox": {
       "nonEditableBackground": "BGLight",
       "modifiedItemForeground": "PURPLE",
+
       "ArrowButton": {
         "iconColor": "WHITE",
         "disabledIconColor": "COMMENT",
         "nonEditableBackground": "BGLight"
       }
     },
+
     "CompletionPopup": {
       "matchForeground": "PURPLE",
       "selectionInactiveBackground": "SELECTION",
       "selectionBackground": "SELECTION"
     },
+
     "Component": {
       "errorFocusColor": "RED",
       "inactiveErrorFocusColor": "RED",
@@ -96,25 +107,31 @@
       "iconColor": "WHITE",
       "hoverIconColor": "WHITE"
     },
+
     "EditorPane": {
       "background": "BGLighter",
       "inactiveBackground": "BGLighter"
     },
+
     "DefaultTabs": {
       "underlineColor": "PINK",
       "inactiveUnderlineColor": "PINK",
       "underlineHeight": 1,
       "hoverBackground": "BGLight"
     },
+
     "EditorTabs": {
       "background": "BGDark"
     },
+
     "Menu": {
       "background": "BGLighter"
     },
+
     "Editor": {
       "shortcutForeground": "PURPLE"
     },
+
     "FileColor": {
       "Yellow": "#E7DE7910",
       "Green": "#67E48010",
@@ -123,6 +140,7 @@
       "Orange": "#E89E6410",
       "Rose": "#E9637910"
     },
+
     "Link": {
       "activeForeground": "PURPLE",
       "hoverForeground": "PURPLE",
@@ -130,11 +148,13 @@
       "visitedForeground": "COMMENT",
       "secondaryForeground": "PINK"
     },
+
     "Notification": {
       "errorForeground": "RED",
       "errorBackground": "BG",
       "errorBorderColor": "RED",
       "MoreButton.innerBorderColor": "COMMENT",
+
       "ToolWindow": {
         "informativeForeground": "FG",
         "informativeBackground": "BG",
@@ -147,15 +167,18 @@
         "errorBorderColor": "RED"
       }
     },
+
     "Plugins": {
       "SearchField.background": "BGDark",
       "hoverBackground": "BGLight",
       "tagBackground": "PINK",
       "tagForeground": "BG",
       "lightSelectionBackground": "BGLight",
+
       "SectionHeader": {
         "background": "BGLighter"
       },
+
       "Button": {
         "installForeground": "GREEN",
         "installBorderColor": "GREEN",
@@ -165,12 +188,14 @@
         "updateBackground": "PURPLE"
       }
     },
+
     "Popup": {
       "Header": {
         "activeBackground": "BGLight",
         "inactiveBackground": "BGLight"
       }
     },
+
     "ProgressBar": {
       "trackColor": "BGLighter",
       "progressColor": "PINK",
@@ -181,29 +206,40 @@
       "passedColor": "GREEN",
       "passedEndColor": "GREEN"
     },
+
     "DragAndDrop": {
       "areaBorderColor": "SELECTION"
     },
+
+    "WelcomeScreen": {},
+
+    "SidePanel": {
+      "background": "BGDark"
+    },
+
     "Tree": {
       "background": "BGDark",
       "modifiedItemForeground": "PURPLE"
     },
+
     "ValidationTooltip": {
       "errorBackground": "BG",
       "errorBorderColor": "RED",
       "warningBackground": "BG",
       "warningBorderColor": "ORANGE"
     },
+
     "VersionControl": {
-      "HgLog": {
-      },
-      "RefLabel": {
-      },
+      "HgLog": {},
+
+      "RefLabel": {},
+
       "FileHistory": {
         "Commit": {
           "selectedBranchBackground": "SELECTION"
         }
       },
+
       "GitLog": {
         "headIconColor": "PURPLE",
         "localBranchIconColor": "GREEN",
@@ -211,6 +247,7 @@
         "tagIconColor": "CYAN",
         "otherIconColor": "PINK"
       },
+
       "Log": {
         "Commit": {
           "hoveredBackground": "SELECTION",
@@ -219,6 +256,7 @@
       }
     }
   },
+
   "icons": {
     "ColorPalette": {
       "Actions.Grey": "#a0a0a0D0",
