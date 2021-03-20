@@ -9,8 +9,6 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
-## [0.1.1] - 2021-03-20
-
 ### Added
 
 - Initial version of plugin
