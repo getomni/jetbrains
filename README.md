@@ -22,7 +22,7 @@
   <a href="#license">License</a>
 </p>
 
-![Omni Screenshot](https://github.com/Mayconsgs/jetbrains/blob/main/screenshot.png?raw=true)
+![Omni Screenshot](https://github.com/getomni/jetbrains/blob/main/screenshot.png?raw=true)
 
 ## Install
 
@@ -31,7 +31,7 @@ All instructions can be found at [INSTALL.md](./INSTALL.md).
 ## Team
 
 This theme is maintained by the following person(s) and a bunch
-of [awesome contributors](https://github.com/mayconsgs/jetbrains/graphs/contributors).
+of [awesome contributors](https://github.com/getomni/jetbrains/graphs/contributors).
 
 <!-- Plugin description end -->
 
@@ -42,4 +42,3 @@ of [awesome contributors](https://github.com/mayconsgs/jetbrains/graphs/contribu
 ## License
 
 [MIT License](./LICENSE.md)
-
