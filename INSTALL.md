@@ -1,9 +1,9 @@
 ### [JetBrains](https://www.jetbrains.com)
 
-#### Install manually
+#### Download files
 
-Download [Omni.Theme-0.1.1.zip](https://github.com/getomni/jetbrains/releases/download/v0.1.1-beta/Omni.Theme-0.1.1.zip)
-.
+1. Go to [latest version](https://github.com/getomni/jetbrains/releases/latest)
+2. On **Assets** download **Omni.Theme-x.x.x.zip**
 
 #### Activating theme
 
