@@ -51,6 +51,10 @@
       "lineSeparatorColor": "BGDarker"
     },
 
+    "PopupMenuSeparator": {
+      "height": 1
+    },
+
     "ToolBar": {
       "background": "BGLighter"
     },
