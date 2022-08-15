@@ -10,7 +10,7 @@ plugins {
   id("org.jetbrains.intellij") version "1.8.0"
   id("org.jetbrains.changelog") version "1.3.1"
   id("io.gitlab.arturbosch.detekt") version "1.21.0"
-  id("org.jlleitschuh.gradle.ktlint") version "10.2.0"
+  id("org.jlleitschuh.gradle.ktlint") version "10.3.0"
 }
 
 group = properties("pluginGroup")
