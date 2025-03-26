@@ -22,6 +22,12 @@
   <a href="#license">License</a>
 </p>
 
+## Build
+``
+./gradle clean build
+``
+Será gerado o arquivo .jar dentro do diretorio ./build/libs
+
 ![Omni Screenshot](https://github.com/getomni/jetbrains/blob/main/screenshot.png?raw=true)
 
 ## Install
