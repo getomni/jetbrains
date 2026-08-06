@@ -1,18 +1,27 @@
 <idea-plugin url="https://github.com/getomni/jetbrains">
-  <id>com.github.getomni.jetbrains</id>
-  <name>Omni Theme</name>
-  <vendor url="https://github.com/getomni" email="maycon.s.santos44@gmail.com">Omni Theme</vendor>
 
-  <depends>com.intellij.modules.platform</depends>
+    <id>com.github.getomni.jetbrains</id>
 
-  <extensions defaultExtensionNs="com.intellij">
-    <applicationService serviceImplementation="com.github.getomni.jetbrains.services.MyApplicationService"/>
-    <projectService serviceImplementation="com.github.getomni.jetbrains.services.MyProjectService"/>
-    <themeProvider id="4cdf8912-6063-4823-b4aa-54024f8c94a4" path="/Omni.theme.json"/>
-  </extensions>
+    <name>Omni Theme</name>
 
-  <applicationListeners>
-    <listener class="com.github.getomni.jetbrains.listeners.MyProjectManagerListener"
-              topic="com.intellij.openapi.project.ProjectManagerListener"/>
-  </applicationListeners>
+    <vendor
+            email="maycon.s.santos44@gmail.com"
+            url="https://github.com/getomni">
+        Omni Theme
+    </vendor>
+
+    <description><![CDATA[
+        <p>Omni Theme is a dark theme inspired by the original Omni design, bringing a clean and comfortable coding experience to JetBrains IDEs.</p>
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <resource-bundle>messages.MyBundle</resource-bundle>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <themeProvider
+                id="4cdf8912-6063-4823-b4aa-54024f8c94a4"
+                path="/Omni.theme.json"/>
+    </extensions>
+
 </idea-plugin>

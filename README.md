@@ -1,44 +1,29 @@
-<!-- Plugin description -->
-<h1 align="center">
-  <br>
-  <img src="https://storage.googleapis.com/golden-wind/github/omni/omni.png" alt="Omni Logo" width="100">
-  <br>
-  Omni for <a href="https://www.jetbrains.com">JetBrains</a>
-  <br>
-</h1>
+# Omni Theme
 
-<p align="center">
-  <strong>Dark theme for <a href="https://www.jetbrains.com">JetBrains</a></strong>
-</p>
+A JetBrains theme inspired by the Omni theme.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/PRs-welcome-%235FCC6F.svg" alt="PRs welcome!" />
+## Supported IDEs
 
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-%235FCC6F">
-</p>
-<p align="center">
-  <a href="#install">Install</a> •
-  <a href="#team">Team</a> •
-  <a href="#license">License</a>
-</p>
+- Rider
+- IntelliJ IDEA
+- Android Studio
+- WebStorm
+- PyCharm
+- GoLand
+- RustRover
+- PhpStorm
 
-![Omni Screenshot](https://github.com/getomni/jetbrains/blob/main/screenshot.png?raw=true)
+## Installation
 
-## Install
+Marketplace
 
-All instructions can be found at [INSTALL.md](./INSTALL.md).
+ou
 
-## Team
+Settings → Plugins → Marketplace
 
-This theme is maintained by the following person(s) and a bunch
-of [awesome contributors](https://github.com/getomni/jetbrains/graphs/contributors).
 
-<!-- Plugin description end -->
 
-| [![Maycon Santos](https://github.com/mayconsgs.png?size=100)](https://github.com/mayconsgs) |
-| ------------------------------------------------------------------------------------------- |
-| [Maycon Santos](https://github.com/mayconsgs)                                               |
+## Building
 
-## License
-
-[MIT License](./LICENSE.md)
+```bash
+./gradlew build
