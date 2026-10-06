@@ -77,7 +77,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v6
 
       - name: Run Plugin Verifier
-        run: ./gradlew runPluginVerifier
+        run: ./gradlew verifyPlugin
 
   # Prepare a draft release for the manual verification
   releaseDraft:
