@@ -1,108 +1,93 @@
-import io.gitlab.arturbosch.detekt.Detekt
+import org.jetbrains.changelog.Changelog
 import org.jetbrains.changelog.markdownToHTML
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
-fun properties(key: String) = project.findProperty(key).toString()
 
 plugins {
   id("java")
-  id("org.jetbrains.kotlin.jvm") version "1.7.20"
-  id("org.jetbrains.intellij") version "1.9.0"
-  id("org.jetbrains.changelog") version "1.3.1"
-  id("io.gitlab.arturbosch.detekt") version "1.21.0"
-  id("org.jlleitschuh.gradle.ktlint") version "11.0.0"
+  id("org.jetbrains.intellij.platform") version "2.19.0"
+  id("org.jetbrains.changelog") version "2.5.0"
 }
 
-group = properties("pluginGroup")
-version = properties("pluginVersion")
+fun properties(key: String) = providers.gradleProperty(key)
+
+group = properties("pluginGroup").get()
+version = properties("pluginVersion").get()
 
 repositories {
   mavenCentral()
-  jcenter()
+
+  intellijPlatform {
+    defaultRepositories()
+  }
 }
+
 dependencies {
-  detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.18.1")
-}
-
-intellij {
-  pluginName.set(properties("pluginName"))
-  version.set(properties("platformVersion"))
-  type.set(properties("platformType"))
-  downloadSources.set(properties("platformDownloadSources").toBoolean())
-  updateSinceUntilBuild.set(true)
-
-  plugins.set(properties("platformPlugins").split(',').map(String::trim).filter(String::isNotEmpty))
-}
-
-changelog {
-  version.set(properties("pluginVersion"))
-  groups.set(emptyList())
-}
-
-detekt {
-  config = files("./detekt-config.yml")
-  buildUponDefaultConfig = true
-
-  reports {
-    html.enabled = false
-    xml.enabled = false
-    txt.enabled = false
+  intellijPlatform {
+    create(properties("platformType"), properties("platformVersion"))
   }
 }
 
-tasks {
-  // Set the JVM compatibility versions
-  properties("javaVersion").let {
-    withType<JavaCompile> {
-      sourceCompatibility = it
-      targetCompatibility = it
-    }
-    withType<KotlinCompile> {
-      kotlinOptions.jvmTarget = it
-    }
-    withType<Detekt> {
-      jvmTarget = it
-    }
-  }
+intellijPlatform {
+  buildSearchableOptions = false
 
-  wrapper {
-    gradleVersion = properties("gradleVersion")
-  }
+  pluginConfiguration {
+    name = properties("pluginName")
+    version = properties("pluginVersion")
 
-  patchPluginXml {
-    version.set(properties("pluginVersion"))
-    sinceBuild.set(properties("pluginSinceBuild"))
-    untilBuild.set(properties("pluginUntilBuild"))
+    description = providers.fileContents(layout.projectDirectory.file("README.md")).asText.map {
+      val start = "<!-- Plugin description -->"
+      val end = "<!-- Plugin description end -->"
 
-    pluginDescription.set(
-      File("./README.md").readText().lines().run {
-        val start = "<!-- Plugin description -->"
-        val end = "<!-- Plugin description end -->"
-
+      with(it.lines()) {
         if (!containsAll(listOf(start, end))) {
           throw GradleException("Plugin description section not found in README.md:\n$start ... $end")
         }
-        subList(indexOf(start) + 1, indexOf(end))
-      }.joinToString("\n").run { markdownToHTML(this) }
-    )
+        subList(indexOf(start) + 1, indexOf(end)).joinToString("\n").let(::markdownToHTML)
+      }
+    }
 
-    changeNotes.set(changelog.getUnreleased().toHTML())
+    changeNotes = provider {
+      with(changelog) {
+        renderItem(
+          (getOrNull(properties("pluginVersion").get()) ?: getUnreleased())
+            .withHeader(false)
+            .withEmptySections(false),
+          Changelog.OutputType.HTML,
+        )
+      }
+    }
+
+    ideaVersion {
+      sinceBuild = properties("pluginSinceBuild")
+      untilBuild = provider { null }
+    }
   }
 
-  runPluginVerifier {
-    ideVersions.set(
-      properties("pluginVerifierIdeVersions").split(',').map(String::trim)
-        .filter(String::isNotEmpty)
-    )
+  publishing {
+    token = providers.environmentVariable("PUBLISH_TOKEN")
+    channels = properties("pluginVersion").map {
+      listOf(it.substringAfter('-', "").substringBefore('.').ifEmpty { "default" })
+    }
+  }
+
+  pluginVerification {
+    ides {
+      recommended()
+    }
+  }
+}
+
+changelog {
+  version = properties("pluginVersion")
+  groups.empty()
+  repositoryUrl = properties("pluginRepositoryUrl")
+}
+
+tasks {
+  wrapper {
+    gradleVersion = properties("gradleVersion").get()
   }
 
   publishPlugin {
-    dependsOn("patchChangelog")
-    token.set(System.getenv("PUBLISH_TOKEN"))
-    channels.set(
-      listOf(
-        properties("pluginVersion").split('-').getOrElse(1) { "default" }.split('.').first()
-      )
-    )
+    dependsOn(patchChangelog)
   }
 }
